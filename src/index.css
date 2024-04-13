@@ -16,25 +16,44 @@ code {
     monospace;
 }
 
-header div .nav-link{
-  font-size: 2vh;
-  font-weight: 500;
-  color: hsl(233, 12%, 13%);
-  transition: .3s;
+.custom-toggler{
+  border-style: none !important;
+  color: hsl(228, 39%, 23%) !important;
 }
 
-header div .nav-link:hover{
-  color: hsl(227, 12%, 61%);
+.custom-toggler .navbar-toggler-icon{
+  background-image: url(./images/icon-hamburger.svg);
+}
+
+.cs-img{
+  margin-right: 35vh !important;
+}
+
+.cs-navbar{
+  background-color: transparent;
+  margin-top: 5vh;
+}
+
+.cs-a{
+  font-size: 2vh;
+  font-weight: 500;
+  color: hsl(233, 12%, 13%) !important;
+  transition: .3s;
+  font-family: 'Be Vietnam Pro', sans-serif;
+}
+
+.cs-a:hover{
+  color: hsl(227, 12%, 61%) !important;
 }
 
 .cs-btn{
-  font-size: 2vh;
+  font-size: 15px;
   font-family: 'Be Vietnam Pro', sans-serif;
   background-color: hsl(12, 88%, 59%);
   border: none;
   border-radius: 50px;
-  width: 20vh;
-  height: 7vh;
+  width: 150px;
+  height: 50px;
   color: white;
   box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, hsl(12, 88%, 79%) 0px 5px 10px;
   transition: .3s;
@@ -44,11 +63,27 @@ header div .nav-link:hover{
   background-color: hsl(12, 88%, 69%);
 }
 
+.cs-btn2{
+  font-size: 2vh;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: white;
+  border: none;
+  border-radius: 50px;
+  width: 20vh;
+  height: 7vh;
+  color: hsl(12, 88%, 59%);
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px, hsl(12, 88%, 59%) 0px 5px 10px;
+  transition: .3s;
+}
+
+.cs-btn2:hover{
+  color: hsl(12, 88%, 69%);
+}
+
 #s1 h1{
   font-weight: 700;
-  font-size: 7.5vh;
   margin-bottom: 4vh;
-  color: hsl(233, 12%, 13%);
+  color: hsl(228, 39%, 23%);
 }
 
 #s1 p{
@@ -57,8 +92,7 @@ header div .nav-link:hover{
 }
 
 p{
-  font-size: 2.5vh;
-  color: hsl(227, 12%, 61%);
+  color: hsl(227, 12%, 61%) !important;
 }
 
 #s2 div ul li{
@@ -95,4 +129,118 @@ p{
 
 #s3 .card-img-top{
   width: 10vh;
+}
+
+#scrollThing::-webkit-scrollbar{
+  background-color: transparent;
+}
+
+#scrollThing::-webkit-scrollbar-thumb{
+  background-color: hsl(12, 88%, 59%);
+  border-radius: 50px;
+}
+
+body::-webkit-scrollbar{
+  background-color: transparent;
+}
+
+body::-webkit-scrollbar-thumb{
+  background-color: hsl(12, 88%, 59%);
+  border-radius: 50px;
+}
+
+#s4{
+  background-image: url("images/bg-simplify-section-desktop.svg");
+  background-color: hsl(12, 88%, 59%);
+	background-repeat: no-repeat;
+}
+
+#s4 h5{
+  width: 80vh;
+  font-size: 7vh;
+}
+
+footer{
+  background-color: hsl(233, 12%, 13%);
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10vh;
+}
+
+#links{
+  grid-row: span 2;
+}
+
+#links a{
+  color: hsl(0, 0%, 98%);
+  text-decoration: none;
+  cursor: pointer;
+  transition: .3s;
+  font-size: 2.5vh;
+}
+
+#links a:hover{
+  color: hsl(12, 88%, 59%);
+}
+
+#socLinks{
+  width: 25vh;
+}
+
+#socLinks a img{
+  transition: .3s;
+}
+
+#socLinks a img:hover{
+  filter: brightness(0) saturate(100%) invert(48%) sepia(70%) saturate(3485%) hue-rotate(341deg) brightness(103%) contrast(90%);
+}
+
+.justify-self-end{
+  justify-self: end;
+}
+
+.cs-input{
+  font-family: 'Be Vietnam Pro', sans-serif;
+  font-size: 2vh;
+  border-radius: 50px;
+  height: 7vh;
+  padding-left: 2vh;
+  margin-right: 2vh;
+  color: hsl(12, 88%, 59%);
+  border: solid .5vh transparent;
+  outline: none;
+  transition: .3s;
+}
+
+.cs-input:hover, .cs-input:focus{
+  border: solid .5vh hsl(12, 88%, 59%);
+}
+
+.cs-btn3{
+  font-size: 2vh;
+  font-family: 'Be Vietnam Pro', sans-serif;
+  background-color: hsl(12, 88%, 59%);
+  border: none;
+  border-radius: 50px;
+  width: 10vh;
+  height: 7vh;
+  color: white;
+  transition: .3s;
+}
+
+.cs-btn3:hover{
+  background-color: hsl(12, 88%, 69%);
+}
+
+#sub{
+  position: relative;
+}
+
+.cs-h6{
+  position: absolute;
+  color: hsl(12, 88%, 69%);
+  font-size: 2vh;
+  font-weight: 400;
+  font-style: italic;
+  bottom: -50%;
 }

@@ -6,9 +6,15 @@ import reportWebVitals from './reportWebVitals';
 import autoAnimate from '@formkit/auto-animate';
 import { useEffect, useRef, useState } from 'react';
 
+import Container from 'react-bootstrap/Container';
+import Nav from 'react-bootstrap/Nav';
+import Navbar from 'react-bootstrap/Navbar';
+
 import Section_1 from './Section_1';
 import Section_2 from './Section_2';
 import Section_3 from './Section_3';
+import Section_4 from './Section_4';
+import Footer from './Footer';
 
 import ImgLogo from './images/logo.svg';
 
@@ -23,34 +29,30 @@ const MainPage = () => {
 
   return (
     <main ref={parentRef}>
-      <header className='container m-5 navbar navbar-expand-sm justify-content-between'>
-        <a className='navbar-brand' href="#">
-          <img src={ImgLogo} alt='logo' className='img-fluid' />
-        </a>
-        <div className='conatiner-fluid'>
-          <ul className='navbar-nav'>
-            <li className='nav-item'>
-              <a className='nav-link' href="#">Pricing</a>
-            </li>
-            <li className='nav-item'>
-              <a className='nav-link' href="#">Product</a>
-            </li>
-            <li className='nav-item'>
-              <a className='nav-link' href="#">About Us</a>
-            </li>
-            <li className='nav-item'>
-              <a className='nav-link' href="#">Careers</a>
-            </li>
-            <li className='nav-item'>
-              <a className='nav-link' href="#">Community</a>
-            </li>
-          </ul>
-        </div>
-        <button className='cs-btn'>Get Started</button>
-      </header>
+      <Navbar expand="lg" className="cs-navbar">
+        <Container>
+          <Navbar.Brand className='cs-img' href="#">
+            <img src={ImgLogo} alt="logo" className="img-fluid" />
+          </Navbar.Brand>
+          <Navbar.Toggle aria-controls="collapsibleNavbar" className='custom-toggler' />
+          <Navbar.Collapse id="collapsibleNavbar">
+            <Nav className="me-auto">
+              {/* Menu items */}
+              <Nav.Link className='cs-a' href="#">Pricing</Nav.Link>
+              <Nav.Link className='cs-a' href="#">Product</Nav.Link>
+              <Nav.Link className='cs-a' href="#">About Us</Nav.Link>
+              <Nav.Link className='cs-a' href="#">Careers</Nav.Link>
+              <Nav.Link className='cs-a' href="#">Community</Nav.Link>
+            </Nav>
+            <button className="cs-btn">Get Started</button>
+          </Navbar.Collapse>
+        </Container>
+      </Navbar>
       <Section_1 />
       <Section_2 />
       <Section_3 />
+      <Section_4 />
+      <Footer />
       <section id='s1'>
 
       </section>
