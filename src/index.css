@@ -93,7 +93,7 @@ p{
 }
 
 #s3 .card-img-top{
-  width: 10vh;
+  width: 100px;
 }
 
 #scrollThing::-webkit-scrollbar{
@@ -120,17 +120,8 @@ body::-webkit-scrollbar-thumb{
 	background-repeat: no-repeat;
 }
 
-#s4 h5{
-  width: 80vh;
-  font-size: 7vh;
-}
-
 #footer{
   background-color: hsl(233, 12%, 13%);
-}
-
-#links{
-  
 }
 
 #links a{
@@ -221,5 +212,9 @@ body::-webkit-scrollbar-thumb{
 
   #s2 div ul li p{
     grid-column: span 2;
+  }
+
+  #s4{
+    background-image: url("images/bg-simplify-section-mobile.svg");
   }
 }

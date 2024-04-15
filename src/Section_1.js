@@ -2,7 +2,7 @@ import React from 'react';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
-import {Container, Row, Col, Button} from 'react-bootstrap';
+import {Container, Row, Col, Button, Image} from 'react-bootstrap';
 
 import ImgIll from './images/illustration-intro.svg';
 
@@ -21,7 +21,7 @@ const Section_1 = () => {
                 </Col>
                 <Col sm={{ span: 12, order: 1 }} 
                      lg={{ span: 5, order: 3 }}>
-                    <img src={ImgIll} alt='Illustration' className='img-fluid' />
+                    <Image fluid src={ImgIll} alt='Illustration' />
                 </Col>
             </Row>
         </Container>
