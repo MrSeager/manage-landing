@@ -4,11 +4,9 @@ import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 import reportWebVitals from './reportWebVitals';
 import autoAnimate from '@formkit/auto-animate';
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef } from 'react';
 
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
+import {Container, Nav, Navbar, Button, Image} from 'react-bootstrap';
 
 import Section_1 from './Section_1';
 import Section_2 from './Section_2';
@@ -29,22 +27,22 @@ const MainPage = () => {
 
   return (
     <main ref={parentRef}>
-      <Navbar expand="lg" className="cs-navbar">
+      <Navbar expand="lg" className="mt-5">
         <Container>
           <Navbar.Brand className='cs-img' href="#">
-            <img src={ImgLogo} alt="logo" className="img-fluid" />
+            <Image src={ImgLogo} alt="logo" className="img-fluid" />
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="collapsibleNavbar" className='custom-toggler' />
-          <Navbar.Collapse id="collapsibleNavbar">
-            <Nav className="me-auto">
+          <Navbar.Collapse id="collapsibleNavbar" className='cs-collapse'>
+            <Nav className="cs-nav me-lg-auto">
               {/* Menu items */}
-              <Nav.Link className='cs-a' href="#">Pricing</Nav.Link>
-              <Nav.Link className='cs-a' href="#">Product</Nav.Link>
-              <Nav.Link className='cs-a' href="#">About Us</Nav.Link>
-              <Nav.Link className='cs-a' href="#">Careers</Nav.Link>
-              <Nav.Link className='cs-a' href="#">Community</Nav.Link>
+              <Nav.Link className='cs-a align-self-center' href="#">Pricing</Nav.Link>
+              <Nav.Link className='cs-a align-self-center' href="#">Product</Nav.Link>
+              <Nav.Link className='cs-a align-self-center' href="#">About Us</Nav.Link>
+              <Nav.Link className='cs-a align-self-center' href="#">Careers</Nav.Link>
+              <Nav.Link className='cs-a align-self-center' href="#">Community</Nav.Link>
             </Nav>
-            <button className="cs-btn">Get Started</button>
+            <Button variant='custom' className="cs-btn rounded-pill">Get Started</Button>
           </Navbar.Collapse>
         </Container>
       </Navbar>

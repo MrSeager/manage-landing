@@ -3,6 +3,8 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import 'bootstrap/dist/css/bootstrap.css';
 
+import {Container, Row, Col, ButtonGroup, ButtonToolbar, Button, Image, Form } from 'react-bootstrap';
+
 import ImgLogo from './images/Image.png'
 import FBIcon from './images/icon-facebook.svg';
 import YTIcon from './images/icon-youtube.svg';
@@ -34,41 +36,52 @@ const Footer = () => {
     };
 
     return (
-        <footer className='container-fluid p-5'>
-            <img src={ImgLogo} alt='logo' className='img-fluid m-1' />
-            <div id='links' className='d-flex flex-row justify-content-between align-items-start'>
-                <div className='btn-group-vertical'>
-                    <a className='m-1' href='#'>Home</a>
-                    <a className='m-1' href='#'>Pricing</a>
-                    <a className='m-1' href='#'>Products</a>
-                    <a className='m-1' href='#'>About Us</a>
-                </div>
-                <div className='btn-group-vertical'>
-                    <a className='m-1' href='#'>Careers</a>
-                    <a className='m-1' href='#'>Community</a>
-                    <a className='m-1' href='#'>Privacy Policy</a>
-                </div>
-            </div>
-            <form id='sub' className='d-flex justify-content-between justify-self-end' onSubmit={handleSubmit}>
-                <input id='email'
-                       name='email'
-                       value={email}
-                       onChange={handleChange} 
-                       className='cs-input' 
-                       type="mail" 
-                       placeholder="Updates in your inbox..." />
-                {error && <h6 className='cs-h6'>{error}</h6>}
-                <button className='cs-btn3' type="submit">Go</button>
-            </form>
-            <div id='socLinks' className='container-flued d-flex justify-content-between'>
-                <a className='' target="_blank" href='https://www.facebook.com/'><img src={FBIcon} alt='icon' /></a>
-                <a className='' target="_blank" href='https://www.youtube.com/'><img src={YTIcon} alt='icon' /></a>
-                <a className='' target="_blank" href='https://www.twitter.com/'><img src={TIcon} alt='icon' /></a>
-                <a className='' target="_blank" href='https://www.pinterest.com/'><img src={PIcon} alt='icon' /></a>
-                <a className='' target="_blank" href='https://www.instagram.com/'><img src={IIcon} alt='icon' /></a>
-            </div>
-            <p className='justify-self-end align-self-end'>Copyright 2020. All Rights Reserved</p>
-        </footer>
+        <Container fluid id='footer' className='p-5'>
+            <Row className=''>
+                <Col sm={{ span: 12 }} 
+                     lg={{ span: 3 }} className='d-flex flex-column justify-content-between align-items-center align-items-lg-start'>
+                    <Image  src={ImgLogo} alt='logo' className='m-1' />
+                    <ButtonGroup id='socLinks' className='m-1'>
+                        <Button variant='custom' className='' target="_blank" href='https://www.facebook.com/'><Image src={FBIcon} alt='icon' /></Button>
+                        <Button variant='custom' className='' target="_blank" href='https://www.youtube.com/'><Image src={YTIcon} alt='icon' /></Button>
+                        <Button variant='custom' className='' target="_blank" href='https://www.twitter.com/'><Image src={TIcon} alt='icon' /></Button>
+                        <Button variant='custom' className='' target="_blank" href='https://www.pinterest.com/'><Image src={PIcon} alt='icon' /></Button>
+                        <Button variant='custom' className='' target="_blank" href='https://www.instagram.com/'><Image src={IIcon} alt='icon' /></Button>
+                    </ButtonGroup>
+                </Col>
+                <Col sm={{ span: 12 }} 
+                     lg={{ span: 6 }} className=''>
+                    <ButtonToolbar className='justify-content-around'>
+                        <ButtonGroup vertical className=''>
+                            <Button variant='custom' className='cs-btn4 m-1 text-start' href='#'>Home</Button>
+                            <Button variant='custom' className='cs-btn4 m-1 text-start' href='#'>Pricing</Button>
+                            <Button variant='custom' className='cs-btn4 m-1 text-start' href='#'>Products</Button>
+                            <Button variant='custom' className='cs-btn4 m-1 text-start' href='#'>About Us</Button>
+                        </ButtonGroup>
+                        <ButtonGroup vertical className='mb-auto'>
+                            <Button variant='custom' className='cs-btn4 m-1 text-start' href='#'>Careers</Button>
+                            <Button variant='custom' className='cs-btn4 m-1 text-start' href='#'>Community</Button>
+                            <Button variant='custom' className='cs-btn4 m-1 text-start' href='#'>Privacy Policy</Button>
+                        </ButtonGroup>
+                    </ButtonToolbar >
+                 </Col>
+                 <Col sm={{ span: 12 }} 
+                      lg={{ span: 3 }} className='d-flex flex-column justify-content-between align-items-center align-items-lg-start'>
+                    <Form  id='sub' className='d-flex justify-content-between align-self-center align-self-lg-end' onSubmit={handleSubmit}>
+                        <Form.Control id='email'
+                            name='email'
+                            value={email}
+                            onChange={handleChange} 
+                            className='rounded-pill' 
+                            type="mail" 
+                            placeholder="Updates in your inbox..." />
+                        {error && <Form.Text className='cs-h6'>{error}</Form.Text>}
+                        <Button variant='custom' className='cs-btn3 rounded-pill' type="submit">Go</Button>
+                    </Form>
+                    <p className='align-self-center align-self-lg-end mt-4'>Copyright 2020. All Rights Reserved</p>
+                </Col>
+            </Row>
+        </Container>
     );
 };
 
