@@ -73,7 +73,7 @@ const Footer = () => {
                             value={email}
                             onChange={handleChange} 
                             className='rounded-pill' 
-                            type="mail" 
+                            type="email" 
                             placeholder="Updates in your inbox..." />
                         {error && <Form.Text className='cs-h6'>{error}</Form.Text>}
                         <Button variant='custom' className='cs-btn3 rounded-pill' type="submit">Go</Button>
