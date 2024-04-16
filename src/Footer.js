@@ -38,7 +38,7 @@ const Footer = () => {
     return (
         <Container fluid id='footer' className='p-5'>
             <Row className=''>
-                <Col sm={{ span: 12 }} 
+                <Col xs={{ span: 12 }} 
                      lg={{ span: 3 }} className='d-flex flex-column justify-content-between align-items-center align-items-lg-start'>
                     <Image  src={ImgLogo} alt='logo' className='m-1' />
                     <ButtonGroup id='socLinks' className='m-1'>
@@ -49,10 +49,10 @@ const Footer = () => {
                         <Button variant='custom' className='' target="_blank" href='https://www.instagram.com/'><Image src={IIcon} alt='icon' /></Button>
                     </ButtonGroup>
                 </Col>
-                <Col sm={{ span: 12 }} 
+                <Col xs={{ span: 12 }} 
                      lg={{ span: 6 }} className=''>
                     <ButtonToolbar className='justify-content-around'>
-                        <ButtonGroup vertical className=''>
+                        <ButtonGroup vertical>
                             <Button variant='custom' className='cs-btn4 m-1 text-start' href='#'>Home</Button>
                             <Button variant='custom' className='cs-btn4 m-1 text-start' href='#'>Pricing</Button>
                             <Button variant='custom' className='cs-btn4 m-1 text-start' href='#'>Products</Button>
@@ -63,9 +63,9 @@ const Footer = () => {
                             <Button variant='custom' className='cs-btn4 m-1 text-start' href='#'>Community</Button>
                             <Button variant='custom' className='cs-btn4 m-1 text-start' href='#'>Privacy Policy</Button>
                         </ButtonGroup>
-                    </ButtonToolbar >
+                    </ButtonToolbar>
                  </Col>
-                 <Col sm={{ span: 12 }} 
+                 <Col xs={{ span: 12 }} 
                       lg={{ span: 3 }} className='d-flex flex-column justify-content-between align-items-center align-items-lg-start'>
                     <Form  id='sub' className='d-flex justify-content-between align-self-center align-self-lg-end' onSubmit={handleSubmit}>
                         <Form.Control id='email'

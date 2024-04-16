@@ -16,7 +16,7 @@ const Section_3 = () => {
         <Container fluid id='s3' className='d-flex flex-column align-items-center'>
             <h3 className='display-5 m-5 cs-fw-c'>What they’ve said</h3>
             <Row className='overflow-auto flex-nowrap' id='scrollThing'>
-                <Col lg={4}>
+                <Col xs={4}>
                     <Card className='border-0 text-center'>
                         <Card.Img variant="top" src={ImgAva1} alt='avatar' className='mx-auto' />
                         <Card.Body>
@@ -26,7 +26,7 @@ const Section_3 = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col lg={4}>
+                <Col xs={4}>
                     <Card className='border-0 text-center'>
                         <Card.Img variant="top" src={ImgAva2} alt='avatar' className='mx-auto' />
                         <Card.Body>
@@ -37,7 +37,7 @@ const Section_3 = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col lg={4}>
+                <Col xs={4}>
                     <Card className='border-0 text-center'>
                         <Card.Img variant="top" src={ImgAva3} alt='avatar' className='mx-auto' />
                         <Card.Body>
@@ -47,7 +47,7 @@ const Section_3 = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col lg={4}>
+                <Col xs={4}>
                     <Card className='border-0 text-center'>
                         <Card.Img variant="top" src={ImgAva4} alt='avatar' className='mx-auto' />
                         <Card.Body>

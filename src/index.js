@@ -34,8 +34,7 @@ const MainPage = () => {
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="collapsibleNavbar" className='custom-toggler' />
           <Navbar.Collapse id="collapsibleNavbar" className='cs-collapse'>
-            <Nav className="cs-nav me-lg-auto">
-              {/* Menu items */}
+            <Nav className="cs-nav mx-auto">
               <Nav.Link className='cs-a align-self-center' href="#">Pricing</Nav.Link>
               <Nav.Link className='cs-a align-self-center' href="#">Product</Nav.Link>
               <Nav.Link className='cs-a align-self-center' href="#">About Us</Nav.Link>
@@ -51,9 +50,6 @@ const MainPage = () => {
       <Section_3 />
       <Section_4 />
       <Footer />
-      <section id='s1'>
-
-      </section>
     </main>
   );
 };

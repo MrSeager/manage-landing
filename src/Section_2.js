@@ -9,7 +9,7 @@ const Section_2 = () => {
     return (
         <Container id='s2' className='mt-5'>
             <Row>
-                <Col sm={{ span: 12 }} 
+                <Col xs={{ span: 12 }} 
                      lg={{ span: 5 }} className=''>
                     <h2 className='display-4 text-center text-lg-start cs-fw-c mb-4'>What’s different about Manage?</h2>
                     <p className='text-center text-lg-start'>Manage provides all the functionality your team needs, without 
@@ -18,7 +18,7 @@ const Section_2 = () => {
                 </Col>
                 <Col lg={{ span: 2}}>
                 </Col>
-                <Col sm={{ span: 12 }} 
+                <Col xs={{ span: 12 }} 
                      lg={{ span: 5 }} className=''>
                     <ListGroup className='list-group'>
                         <ListGroup.Item className='border-0'>
