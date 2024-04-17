@@ -13,10 +13,10 @@ import ImgAva4 from './images/avatar-shanai.png';
 const Section_3 = () => {
 
     return (
-        <Container fluid id='s3' className='d-flex flex-column align-items-center'>
+        <Container fluid='xs' id='s3' className='d-flex flex-column align-items-center'>
             <h3 className='display-5 m-5 cs-fw-c'>What they’ve said</h3>
-            <Row className='overflow-auto flex-nowrap' id='scrollThing'>
-                <Col xs={4}>
+            <Row className='container-fluid overflow-auto flex-nowrap' id='scrollThing'>
+                <Col xs={16} sm={4}>
                     <Card className='border-0 text-center'>
                         <Card.Img variant="top" src={ImgAva1} alt='avatar' className='mx-auto' />
                         <Card.Body>
@@ -26,7 +26,7 @@ const Section_3 = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col xs={4}>
+                <Col xs={16} sm={4}>
                     <Card className='border-0 text-center'>
                         <Card.Img variant="top" src={ImgAva2} alt='avatar' className='mx-auto' />
                         <Card.Body>
@@ -37,7 +37,7 @@ const Section_3 = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col xs={4}>
+                <Col xs={16} sm={4}>
                     <Card className='border-0 text-center'>
                         <Card.Img variant="top" src={ImgAva3} alt='avatar' className='mx-auto' />
                         <Card.Body>
@@ -47,7 +47,7 @@ const Section_3 = () => {
                         </Card.Body>
                     </Card>
                 </Col>
-                <Col xs={4}>
+                <Col xs={16} sm={4}>
                     <Card className='border-0 text-center'>
                         <Card.Img variant="top" src={ImgAva4} alt='avatar' className='mx-auto' />
                         <Card.Body>
