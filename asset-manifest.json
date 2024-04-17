@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/manage-landing/static/css/main.1513a324.css",
-    "main.js": "/manage-landing/static/js/main.bb1f9cd6.js",
+    "main.js": "/manage-landing/static/js/main.0259d1ee.js",
     "static/js/453.7433cc0e.chunk.js": "/manage-landing/static/js/453.7433cc0e.chunk.js",
     "static/media/avatar-ali.png": "/manage-landing/static/media/avatar-ali.88f9155cb730934f4d7c.png",
     "static/media/avatar-shanai.png": "/manage-landing/static/media/avatar-shanai.4bbe2f95e8975736fbd8.png",
@@ -20,11 +20,11 @@
     "static/media/bg-tablet-pattern.svg": "/manage-landing/static/media/bg-tablet-pattern.b6990a984c7bcc142d3e.svg",
     "static/media/icon-hamburger.svg": "/manage-landing/static/media/icon-hamburger.8dcf47cc6f3180ad040f.svg",
     "main.1513a324.css.map": "/manage-landing/static/css/main.1513a324.css.map",
-    "main.bb1f9cd6.js.map": "/manage-landing/static/js/main.bb1f9cd6.js.map",
+    "main.0259d1ee.js.map": "/manage-landing/static/js/main.0259d1ee.js.map",
     "453.7433cc0e.chunk.js.map": "/manage-landing/static/js/453.7433cc0e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.1513a324.css",
-    "static/js/main.bb1f9cd6.js"
+    "static/js/main.0259d1ee.js"
   ]
 }
